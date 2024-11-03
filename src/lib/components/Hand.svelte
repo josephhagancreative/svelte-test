@@ -34,7 +34,8 @@
 	}
 	.resetBtn {
 		background-color: transparent;
-		border: 1px solid rgb(255, 169, 169);
+		color: rgb(95, 95, 95);
+		border: 1px solid rgb(207, 207, 207);
 		border-radius: 3px;
 		padding: 0.5rem 1rem;
 		cursor: pointer;
@@ -43,7 +44,7 @@
 		width: 75px;
 
 		&:hover {
-			background-color: rgb(237, 228, 228);
+			background-color: rgb(229, 229, 229);
 		}
 
 		&:disabled {

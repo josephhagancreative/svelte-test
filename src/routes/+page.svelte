@@ -61,10 +61,15 @@
 
 	.handContainer {
 		display: flex;
+		flex-direction: row;
 		justify-content: space-between;
 		width: 100%;
-		gap: 3rem;
+		gap: 1rem;
 		margin: 1rem 0;
+
+		@media (width < 800px) {
+			flex-direction: column;
+		}
 
 		> .area {
 			display: flex;
