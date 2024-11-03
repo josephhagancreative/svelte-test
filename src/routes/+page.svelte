@@ -10,7 +10,11 @@
 	let score = $derived(calculateHandScore(hand));
 
 	const handleUpdateHand = (selectedCard: Card) => {
-		if (hand.length < 5 && !hand.includes(selectedCard)) {
+		if (hand.includes(selectedCard)) {
+			removeCardFromHand(selectedCard);
+			return;
+		}
+		if (hand.length < 5) {
 			selectedCard.isInHand = true;
 			hand.push(selectedCard);
 		}
@@ -56,7 +60,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		padding: 0 4rem;
+		padding: 0 0.5rem;
 	}
 
 	.handContainer {
@@ -64,6 +68,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		width: 100%;
+		max-width: 800px;
 		gap: 1rem;
 		margin: 1rem 0;
 
