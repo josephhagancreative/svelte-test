@@ -56,21 +56,28 @@
 		font-family: Arial, Helvetica, sans-serif;
 	}
 	.pageContainer {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		padding: 0 0.5rem;
+		padding-bottom: 20rem;
 	}
 
 	.handContainer {
+		position: fixed;
+		bottom: 10px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		width: 100%;
+		min-width: 350px;
 		max-width: 800px;
 		gap: 1rem;
-		margin: 1rem 0;
+		margin: 1rem;
+		border: 1px solid grey;
+		border-radius: 3px;
+		background-color: rgba(255, 255, 255, 0.808);
 
 		@media (width < 800px) {
 			flex-direction: column;
@@ -81,8 +88,7 @@
 			flex: 1;
 			flex-direction: column;
 			align-items: center;
-			border: 1px solid grey;
-			border-radius: 3px;
+			padding: 0 1rem;
 		}
 	}
 

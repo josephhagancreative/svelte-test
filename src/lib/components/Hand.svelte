@@ -33,7 +33,7 @@
 		gap: 10px;
 	}
 	.resetBtn {
-		background-color: transparent;
+		background-color: white;
 		color: rgb(95, 95, 95);
 		border: 1px solid rgb(207, 207, 207);
 		border-radius: 3px;
